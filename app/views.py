@@ -41,7 +41,7 @@ def contact():
             mail.send(msg)
 
             flash('You have successfully filled out the form', 'success')
-            return redirect(url_for('about'))
+            return redirect(url_for('home'))
 
         flash_errors(contactform)
 
